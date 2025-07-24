@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Executive Summary – Luxury Car Project</title>
+  <style>
+    /* Using a clean and modern font */
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+    /* Defining colors for easy management */
+    :root {
+      --primary-color: #334fff;
+      --primary-gradient: linear-gradient(170deg, #334fff 0%, #2a41e8 100%);
+      /* Using a vibrant orange for the new active color */
+      --active-orange: #ff9900;
+      --background-main: #f0f2f7;
+      --background-card: #ffffff;
+      --text-dark: #2c3e50;
+      --text-light: #5a6a85;
+      --border-color: #e9ecef;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: var(--background-main);
+      color: var(--text-dark);
+      line-height: 1.7;
+    }
+
+    .container {
+      display: flex;
+      min-height: 100vh;
+    }
+
+    .sidebar {
+      width: 280px;
+      background: var(--primary-gradient);
+      color: var(--background-card);
+      padding: 20px;
+      position: fixed;
+      height: 100vh;
+      overflow-y: auto;
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+      left: 0;
+      right: auto;
+      transition: width 0.3s ease;
+    }
+
+    .logo-container {
+      text-align: center;
+      margin-bottom: 35px;
+      padding: 15px 0;
+    }
+
+    .logo-container h2 {
+        font-size: 20px;
+        font-weight: 600;
+        margin-top: 15px;
+        opacity: 0.95;
+    }
+
+    .logo {
+      width: 110px;
+      height: 110px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid rgba(255, 255, 255, 0.8);
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s ease;
+    }
+
+    .logo:hover {
+      transform: scale(1.08);
+    }
+
+    .nav-menu {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .nav-item {
+      margin-bottom: 8px;
+    }
+
+    .nav-link {
+      display: block;
+      padding: 14px 22px;
+      color: #e0eaff;
+      text-decoration: none;
+      border-radius: 10px;
+      transition: all 0.3s ease;
+      font-size: 16px;
+      font-weight: 500;
+      border: 1px solid transparent;
+      background: rgba(255, 255, 255, 0.05);
+      position: relative;
+    }
+    
+    .nav-link:hover {
+      background: rgba(255, 255, 255, 0.15);
+      border-color: rgba(255, 255, 255, 0.2);
+      color: var(--background-card);
+      transform: translateY(-2px);
+    }
+
+    /* ## THE MODIFIED CODE IS HERE ## */
+    .nav-link.active {
+      /* Dark, consistent background for the active button */
+      background: #1c2a78; 
+      /* Orange color for the font as requested */
+      color: var(--active-orange); 
+      font-weight: 600;
+      box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.4); /* Inner shadow for depth */
+      border-color: var(--primary-color);
+    }
+    
+    .main-content {
+      margin-left: 280px;
+      padding: 40px;
+      width: calc(100% - 280px);
+    }
+
+    .content-section {
+      display: none;
+      background: var(--background-card);
+      border-radius: 16px;
+      padding: 40px;
+      margin-bottom: 30px;
+      box-shadow: 0 10px 35px rgba(149, 157, 165, 0.15);
+      border-top: 4px solid var(--primary-color);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .content-section:hover {
+        transform: translateY(-6px);
+        box-shadow: 0 15px 40px rgba(149, 157, 165, 0.25);
+    }
+
+    .content-section.active {
+      display: block;
+      animation: fadeIn 0.5s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .section-header {
+      text-align: center;
+      margin-bottom: 35px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid var(--border-color);
+    }
+
+    .section-title {
+      font-size: 30px;
+      font-weight: 700;
+      color: var(--primary-color);
+    }
+
+    p {
+        font-size: 17px;
+        color: var(--text-light);
+        line-height: 1.8;
+    }
+    
+    ul {
+      list-style: none;
+      padding-left: 10px;
+    }
+
+    ul li {
+      font-size: 17px;
+      color: var(--text-light);
+      margin-bottom: 15px;
+      padding-left: 25px;
+      position: relative;
+    }
+
+    ul li::before {
+      content: "✓";
+      color: var(--primary-color);
+      font-weight: bold;
+      display: inline-block;
+      position: absolute;
+      left: 0;
+      font-size: 18px;
+    }
+
+    ul li strong {
+      color: var(--text-dark);
+      font-weight: 600;
+    }
+
+
+    @media (max-width: 768px) {
+      .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      }
+      .main-content {
+        margin-left: 0;
+        width: 100%;
+        padding: 25px;
+      }
+      .container {
+        flex-direction: column;
+      }
+      .nav-link {
+        text-align: center;
+      }
+      .nav-link:hover {
+        transform: none;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <nav class="sidebar">
+      <div class="logo-container">
+        <img src="logo.png" alt="Project Logo" class="logo">
+        <h2>Executive Summary – Luxury Car Project</h2>
+      </div>
+      <a href="dashboard.html" class="nav-link">Home</a>
+      <ul class="nav-menu">
+        <li class="nav-item"><a href="#" class="nav-link active" onclick="showSection('vision', event)">Vision</a></li>
+        <li class="nav-item"><a href="#" class="nav-link" onclick="showSection('mission', event)">Mission</a></li>
+        <li class="nav-item"><a href="#" class="nav-link" onclick="showSection('objectives', event)">Objectives & Goals</a></li>
+        <li class="nav-item"><a href="#" class="nav-link" onclick="showSection('longterm', event)">Long-Term Goals</a></li>
+        <li class="nav-item"><a href="#" class="nav-link" onclick="showSection('growth', event)">Growth Plan</a></li>
+        <li class="nav-item"><a href="#" class="nav-link" onclick="showSection('advantage', event)">Competitive Advantage</a></li>
+      </ul>
+    </nav>
+    <main class="main-content">
+      <section id="vision" class="content-section active">
+        <div class="section-header"><h1 class="section-title">Vision</h1></div>
+        <p>To become the number one reference in the field of car protection and nano-ceramic on both the local and global levels by building an interconnected brand based on innovation, quality, and total customer satisfaction.</p>
+      </section>
+      <section id="mission" class="content-section">
+        <div class="section-header"><h1 class="section-title">Mission</h1></div>
+        <p>To provide integrated and professional car protection services using the latest nano and protective film technologies, delivered by well-trained teams, and offering a seamless digital experience from booking to delivery. We are committed to offering our services at competitive prices to ensure customer satisfaction.</p>
+      </section>
+      <section id="objectives" class="content-section">
+        <div class="section-header"><h1 class="section-title">Objectives & Goals</h1></div>
+        <ul>
+          <li>Reach luxury car owners in Riyadh through high-value services.</li>
+          <li>Ensure customer satisfaction with a smooth experience, including transport, authorization, and after-sales service.</li>
+          <li>Build strong brand loyalty through uncompromised quality.</li>
+          <li>Achieve steady annual growth in customers and revenue.</li>
+        </ul>
+      </section>
+      <section id="longterm" class="content-section">
+        <div class="section-header"><h1 class="section-title">Long-Term Goals</h1></div>
+        <ul>
+          <li>Open a second branch within the first year, then expand to several major areas in Riyadh.</li>
+          <li>Build a branch network covering all regions of the Kingdom by the fourth year.</li>
+          <li>Launch operations in the Gulf and global markets at a later stage.</li>
+          <li>Achieve international recognition for the Luxury Car brand as a standard of quality and excellence.</li>
+        </ul>
+      </section>
+      <section id="growth" class="content-section">
+        <div class="section-header"><h1 class="section-title">Growth Plan</h1></div>
+        <ul>
+          <li>Enhance digital presence through a smart booking platform and comprehensive electronic authorization for clients.</li>
+          <li>Launch mobile units equipped with all technologies to serve customers at their locations.</li>
+          <li>Provide a transportation fleet for car pickup and delivery, ensuring a seamless and comfortable experience.</li>
+          <li>Establish strategic partnerships with car agencies and major showrooms from the outset.</li>
+          <li>Continual investment in modern technologies and training to maintain leadership.</li>
+        </ul>
+      </section>
+      <section id="advantage" class="content-section">
+        <div class="section-header"><h1 class="section-title">Competitive Advantage</h1></div>
+        <ul>
+          <li><strong>Superior Quality:</strong> Using the best materials and modern technologies for car protection, ensuring perfect results and long-lasting shine.</li>
+          <li><strong>Expertise & Professionalism:</strong> A specialized and well-trained team with vast experience, providing service at the highest levels of professionalism and attention to detail.</li>
+          <li><strong>Outstanding Customer Experience:</strong> Providing an integrated and smooth customer journey, including online booking, transportation & authorization, and ongoing support to ensure their comfort.</li>
+          <li><strong>Competitive Pricing:</strong> Offering our luxury services at competitive prices with high value for clients, guaranteeing their full satisfaction.</li>
+          <li><strong>Continuous Innovation:</strong> Our commitment to ongoing innovation and development keeps us at the forefront of the car protection field, delivering the latest solutions to our clients.</li>
+        </ul>
+      </section>
+    </main>
+  </div>
+  <script>
+    function showSection(sectionId, event) {
+      event.preventDefault();
+
+      document.querySelectorAll('.content-section').forEach(section => {
+        section.classList.remove('active');
+      });
+
+      document.querySelectorAll('.nav-link').forEach(link => {
+        link.classList.remove('active');
+      });
+      
+      document.getElementById(sectionId).classList.add('active');
+      
+      event.currentTarget.classList.add('active');
+    }
+  </script>
+</body>
+</html>

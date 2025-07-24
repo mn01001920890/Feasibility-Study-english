@@ -1,0 +1,1599 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comprehensive Legal and Regulatory Study - Car Protection and Nano Ceramic Center Project</title>
+    <style>
+        /* Reset and base styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f8f9fa;
+            direction: ltr;
+        }
+
+        /* Sidebar styles */
+        .sidebar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 320px;
+            height: 100vh;
+            background: linear-gradient(135deg, #1e3a8a, #1e40af);
+            color: white;
+            padding: 20px;
+            overflow-y: auto;
+            box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+        }
+
+        .sidebar h2 {
+            font-size: 1.4rem;
+            margin-bottom: 25px;
+            text-align: center;
+            border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+            padding-bottom: 15px;
+        }
+
+        .sidebar ul {
+            list-style: none;
+        }
+
+        .sidebar li {
+            margin-bottom: 8px;
+        }
+
+        .sidebar a {
+            color: white;
+            text-decoration: none;
+            display: block;
+            padding: 10px 12px;
+            border-radius: 6px;
+            transition: all 0.3s ease;
+            font-size: 0.85rem;
+            border-left: 3px solid transparent;
+        }
+
+        .sidebar a:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+            border-left-color: #60a5fa;
+            transform: translateX(3px);
+        }
+
+        .sidebar a.active {
+            background-color: rgba(255, 255, 255, 0.2);
+            border-left-color: #fbbf24;
+        }
+
+        /* Main content styles */
+        .main-content {
+            margin-left: 340px;
+            padding: 30px;
+            min-height: 100vh;
+        }
+
+        .page {
+            display: none;
+            background: white;
+            border-radius: 12px;
+            padding: 40px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+            animation: fadeIn 0.5s ease-in-out;
+        }
+
+        .page.active {
+            display: block;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Typography */
+        h1 {
+            color: #1e3a8a;
+            font-size: 2.2rem;
+            margin-bottom: 20px;
+            border-bottom: 3px solid #3b82f6;
+            padding-bottom: 10px;
+        }
+
+        h2 {
+            color: #1e40af;
+            font-size: 1.8rem;
+            margin: 25px 0 15px 0;
+            border-left: 4px solid #3b82f6;
+            padding-left: 15px;
+        }
+
+        h3 {
+            color: #1e40af;
+            font-size: 1.4rem;
+            margin: 20px 0 12px 0;
+        }
+
+        h4 {
+            color: #374151;
+            font-size: 1.1rem;
+            margin: 15px 0 8px 0;
+            font-weight: 600;
+        }
+
+        p {
+            margin-bottom: 12px;
+            text-align: justify;
+            line-height: 1.7;
+        }
+
+        /* Lists */
+        ul, ol {
+            margin: 12px 0;
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 6px;
+            line-height: 1.6;
+        }
+
+        /* Tables */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        th {
+            background: linear-gradient(135deg, #1e3a8a, #1e40af);
+            color: white;
+            padding: 12px;
+            text-align: center;
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+
+        td {
+            padding: 10px 12px;
+            border-bottom: 1px solid #e5e7eb;
+            text-align: center;
+            font-size: 0.9rem;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f8fafc;
+        }
+
+        tr:hover {
+            background-color: #e0f2fe;
+            transition: background-color 0.3s ease;
+        }
+
+        /* Header section */
+        .header-section {
+            background: linear-gradient(135deg, #1e3a8a, #3b82f6);
+            color: white;
+            padding: 30px;
+            border-radius: 12px;
+            margin-bottom: 25px;
+            text-align: center;
+        }
+
+        .header-section h1 {
+            color: white;
+            border-bottom: none;
+            margin-bottom: 10px;
+        }
+
+        .header-section .subtitle {
+            font-size: 1.1rem;
+            opacity: 0.9;
+            margin-bottom: 15px;
+        }
+
+        .header-section .meta {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+            font-size: 0.9rem;
+        }
+
+        .header-section .meta div {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 10px;
+            border-radius: 6px;
+        }
+
+        /* Navigation buttons */
+        .nav-buttons {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 25px;
+            padding-top: 15px;
+            border-top: 1px solid #e5e7eb;
+        }
+
+        .nav-button {
+            background: linear-gradient(135deg, #1e3a8a, #3b82f6);
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            font-size: 0.9rem;
+        }
+
+        .nav-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(59, 130, 246, 0.3);
+        }
+
+        .nav-button:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .sidebar {
+                width: 100%;
+                height: auto;
+                position: relative;
+            }
+            
+            .main-content {
+                margin-left: 0;
+                padding: 15px;
+            }
+            
+            .page {
+                padding: 20px;
+            }
+            
+            h1 {
+                font-size: 1.8rem;
+            }
+            
+            h2 {
+                font-size: 1.4rem;
+            }
+        }
+
+        /* Print styles */
+        @media print {
+            .sidebar {
+                display: none;
+            }
+            
+            .main-content {
+                margin-left: 0;
+            }
+            
+            .page {
+                display: block !important;
+                page-break-after: always;
+                box-shadow: none;
+                border: none;
+            }
+            
+            .nav-buttons {
+                display: none;
+            }
+        }
+
+        .highlight {
+            background: linear-gradient(135deg, #fef3c7, #fde68a);
+            padding: 15px;
+            border-radius: 6px;
+            border-left: 4px solid #f59e0b;
+            margin: 15px 0;
+        }
+
+        .card {
+            background: #f8fafc;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 15px 0;
+            border-left: 4px solid #3b82f6;
+        }
+		.logo-container {
+		  margin-bottom: 30px;
+		}
+
+		.logo {
+		  width: 120px;
+		  height: 120px;
+		  border-radius: 50%;
+		  object-fit: cover;
+		  border: 4px solid rgba(0, 123, 255, 0.8);
+		  box-shadow: 0 10px 20px rgba(0, 123, 255, 0.3);
+		  transition: transform 0.3s ease;
+		}
+
+		.logo:hover {
+		  transform: scale(1.05);
+		}		
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+	    <div class="logo-container">
+           <img src="logo.png" alt="Company Logo" class="logo">
+        </div> 
+        
+		<h2 style="color: white;">Legal & Regulatory Feasibility Study</h2>
+        <ul>
+			 <a href="dashboard.html" class="nav-link">Home Page</a>
+            <li><a href="#" onclick="showPage('intro')" class="active">Introduction</a></li>
+            <li><a href="#" onclick="showPage('section1')">Introduction and Project Overview</a></li>
+            <li><a href="#" onclick="showPage('section2')">Legal and Regulatory Framework</a></li>
+            <li><a href="#" onclick="showPage('section3')">Required Licenses and Permits</a></li>
+            <li><a href="#" onclick="showPage('section4')">Regulatory Compliance</a></li>
+            <li><a href="#" onclick="showPage('section5')">Contractual Considerations</a></li>
+            <li><a href="#" onclick="showPage('section6')">Intellectual Property Rights</a></li>
+            <li><a href="#" onclick="showPage('section7')">Legal Risk Management</a></li>
+            <li><a href="#" onclick="showPage('section8')">Administrative and Organizational Structure</a></li>
+            <li><a href="#" onclick="showPage('section9')">Tax and Zakat Obligations</a></li>
+            <li><a href="#" onclick="showPage('section10')">Labor Licenses and Labor Law</a></li>
+            <li><a href="#" onclick="showPage('section11')">Required Insurance</a></li>
+            <li><a href="#" onclick="showPage('section12')">Recommendations and Conclusion</a></li>
+            <li><a href="#" onclick="showPage('section13')">References and Sources</a></li>
+        </ul>
+    </div>
+
+    <div class="main-content">
+        <div id="intro" class="page active">
+            <div class="header-section">
+                <h1>Comprehensive Legal and Regulatory Study</h1>
+                <div class="subtitle">Car Protection and Nano Ceramic Center Project</div>
+                <div class="meta">
+                    <div><strong>Prepared by:</strong> Manus AI</div>
+                    <div><strong>Date of Preparation:</strong> July 2025</div>
+                    <div><strong>Project Type:</strong> Car Protection and Nano Ceramic Application Center</div>
+                    <div><strong>Area:</strong> 72 sq. meters (6 x 12 meters)</div>
+                    <div><strong>Location:</strong> Kingdom of Saudi Arabia</div>
+                </div>
+            </div>
+
+            <h2>Executive Summary</h2>
+            <p>This study aims to provide a comprehensive analysis of the legal and regulatory aspects of a car protection and nano ceramic center project in the Kingdom of Saudi Arabia. This project is considered modern and advanced in the automotive services sector, offering specialized services in applying Paint Protection Film (PPF), nano ceramic coatings, window tinting, and car polishing.</p>
+
+            <p>The study includes a detailed analysis of legal and regulatory requirements, necessary licenses, compliance with local laws and regulations, legal risk management, the required administrative structure, tax and Zakat obligations, intellectual property rights, required insurance, and occupational safety and health requirements.</p>
+
+            <div class="highlight">
+                <h3>Study Objectives</h3>
+                <ul>
+                    <li>Identify all legal and regulatory requirements for the project.</li>
+                    <li>Develop a comprehensive plan to obtain the required licenses and permits.</li>
+                    <li>Analyze legal risks and develop strategies to mitigate them.</li>
+                    <li>Ensure full compliance with local laws and regulations.</li>
+                    <li>Provide practical recommendations for managing legal and regulatory aspects.</li>
+                </ul>
+            </div>
+
+            <div class="nav-buttons">
+                <button class="nav-button" disabled>Previous</button>
+                <button class="nav-button" onclick="showPage('section1')">Next: Introduction</button>
+            </div>
+        </div>
+
+        <div id="section1" class="page">
+            <h1>Introduction and Project Overview</h1>
+            
+            <p>The automotive services sector in the Kingdom of Saudi Arabia is experiencing rapid and advanced growth, especially in specialized services like car protection and the application of modern technologies. Within the framework of Saudi Vision 2030 and the trend towards economic diversification and the development of non-oil sectors, the importance of specialized car service projects emerges as they meet the growing needs of consumers and contribute to raising the level of services provided.</p>
+
+            <h2>Nature of Services Provided</h2>
+            <p>The center offers a comprehensive range of specialized services in car protection, which require high technical expertise and advanced equipment. These services include:</p>
+            
+            <div class="card">
+                <h3>Core Services</h3>
+                <ul>
+                    <li><strong>Paint Protection Film (PPF) Application:</strong> Transparent protection for paint from scratches and weather elements.</li>
+                    <li><strong>Nano Ceramic Coating:</strong> Advanced coating providing long-term protection and a lasting shine.</li>
+                    <li><strong>Window Tinting:</strong> Protection from UV rays and heat.</li>
+                    <li><strong>Professional Polishing:</strong> Restoring paint gloss and removing minor scratches.</li>
+                    <li><strong>Comprehensive Detailing:</strong> Specialized interior and exterior cleaning services.</li>
+                </ul>
+            </div>
+
+            <h2>Economic and Social Importance</h2>
+            <p>This project contributes to achieving several important economic and social goals. Economically, the project provides specialized job opportunities for Saudi youth and helps develop their skills in an advanced technical field. It also meets a growing demand in the Saudi market for car protection services, especially with the rising standard of living and increased awareness of the importance of preserving vehicle value.</p>
+
+            <h2>Challenges and Opportunities</h2>
+            <p>The project faces several challenges that require a comprehensive legal and regulatory study. These challenges include the need to obtain appropriate licenses from competent authorities, adhere to safety and occupational health standards, manage chemicals used in operations, comply with labor and employment laws, and protect the intellectual property rights of the technologies used.</p>
+
+            <div class="nav-buttons">
+                <button class="nav-button" onclick="showPage('intro')">Previous: Executive Summary</button>
+                <button class="nav-button" onclick="showPage('section2')">Next: Legal Framework</button>
+            </div>
+        </div>
+
+        <div id="section2" class="page">
+            <h1>Legal and Regulatory Framework</h1>
+            
+            <p>The car protection and nano ceramic center project is subject to a comprehensive set of laws and regulations in the Kingdom of Saudi Arabia, which aim to regulate commercial activities, ensure public safety, and protect the rights of all involved parties.</p>
+
+            <h2>Governing Primary Regulations</h2>
+            
+            <h3>Saudi Companies Law</h3>
+            <p>The Companies Law issued by Royal Decree No. M/132 dated 1/12/1443H is the primary legal framework for establishing and operating companies in the Kingdom. This law defines the different forms of companies and the requirements for incorporation, registration, and governance.</p>
+
+            <div class="card">
+                <h4>Available Company Forms for the Project:</h4>
+                <ul>
+                    <li><strong>Sole Proprietorship:</strong> Simpler procedures, suitable for small projects.</li>
+                    <li><strong>Limited Liability Company (LLC):</strong> Greater protection for owners, broader growth potential.</li>
+                </ul>
+            </div>
+
+            <h3>Saudi Labor Law</h3>
+            <p>The Labor Law issued by Royal Decree No. M/51 dated 23/8/1426H governs labor relations in the Kingdom. This law specifies the rights and duties of employers and workers, terms of employment contracts, working hours, wages, leaves, termination of service, and occupational safety and health requirements.</p>
+
+            <h3>Municipal and Urban Planning Regulations</h3>
+            <p>Automotive repair and service workshops are subject to specific municipal requirements according to regulations issued by the Ministry of Municipal and Rural Affairs and Housing. These requirements include location, area, design, equipment, safety, and environmental standards.</p>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Requirement</th>
+                        <th>Details</th>
+                        <th>Competent Authority</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Minimum Area</td>
+                        <td>35 square meters per car</td>
+                        <td>Municipality</td>
+                    </tr>
+                    <tr>
+                        <td>Ventilation</td>
+                        <td>Adequate ventilation system for chemicals</td>
+                        <td>Civil Defense</td>
+                    </tr>
+                    <tr>
+                        <td>Safety</td>
+                        <td>Fire extinguishing systems and emergency exits</td>
+                        <td>Civil Defense</td>
+                    </tr>
+                    <tr>
+                        <td>Storage</td>
+                        <td>Safe areas for chemical substances</td>
+                        <td>Environment Authority</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h2>Specialized Regulatory Laws</h2>
+            
+            <h3>Consumer Protection Laws</h3>
+            <p>The Consumer Protection Law issued by Royal Decree No. M/7 dated 11/2/1429H governs consumer rights and the obligations of service providers. This law requires the car protection center to adhere to quality and transparency standards in dealing with customers.</p>
+
+            <div class="nav-buttons">
+                <button class="nav-button" onclick="showPage('section1')">Previous: Introduction</button>
+                <button class="nav-button" onclick="showPage('section3')">Next: Licenses and Permits</button>
+            </div>
+        </div>
+
+        <div id="section3" class="page">
+            <h1>Required Licenses and Permits</h1>
+            
+            <p>Establishing and operating a car protection and nano ceramic center requires obtaining a comprehensive set of licenses and permits from the relevant government authorities.</p>
+
+            <h2>Primary Licenses</h2>
+            
+            <h3>Commercial Registration (CR)</h3>
+            <p>The Commercial Registration is the first and most important legal step to officially establish the project. The CR is obtained through the Ministry of Commerce's electronic platform (cr.sa).</p>
+
+            <div class="card">
+                <h4>Required Documents:</h4>
+                <ul>
+                    <li>National ID of the project owner</li>
+                    <li>National Address for the designated business location</li>
+                    <li>Mobile number activated with Absher</li>
+                    <li>Specify business activity: "Automotive Services - Vehicle Tinting and Protection"</li>
+                </ul>
+                <p><strong>Fees:</strong> 200 SAR + Chamber of Commerce fees 300-800 SAR</p>
+                <p><strong>Issuance Period:</strong> 1-3 business days</p>
+            </div>
+
+            <h3>Municipal License</h3>
+            <p>The municipal license is necessary to operate the shop legally and connect utilities. It is obtained through the Balady platform (balady.gov.sa).</p>
+
+            <h2>Safety and Security Licenses</h2>
+            
+            <h3>Civil Defense Safety Certificate</h3>
+            <p>A safety certificate is mandatory for workshops containing heating devices or flammable materials.</p>
+
+            <div class="highlight">
+                <h4>Basic Requirements:</h4>
+                <ul>
+                    <li>Fire extinguishers (one for every 50 sq. meters)</li>
+                    <li>Clear and illuminated emergency exits</li>
+                    <li>Smoke and heat detectors</li>
+                    <li>Equipped first aid kit</li>
+                    <li>Warning and instructional signs</li>
+                    <li>Adequate ventilation for chemical materials</li>
+                </ul>
+            </div>
+
+            <h2>Timeline for Obtaining Licenses</h2>
+            
+            <table>
+                <thead>
+                    <tr>
+                        <th>License</th>
+                        <th>Issuing Authority</th>
+                        <th>Expected Duration</th>
+                        <th>Estimated Cost</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Commercial Registration</td>
+                        <td>Ministry of Commerce</td>
+                        <td>1-3 days</td>
+                        <td>500-1,000 SAR</td>
+                    </tr>
+                    <tr>
+                        <td>Municipal License</td>
+                        <td>Municipality</td>
+                        <td>5-10 days</td>
+                        <td>600-1,200 SAR</td>
+                    </tr>
+                    <tr>
+                        <td>Safety Certificate</td>
+                        <td>Civil Defense</td>
+                        <td>7-14 days</td>
+                        <td>300-600 SAR</td>
+                    </tr>
+                    <tr>
+                        <td>Environmental Permit</td>
+                        <td>Environment Authority</td>
+                        <td>15-30 days</td>
+                        <td>500-2,000 SAR</td>
+                    </tr>
+                    <tr>
+                        <td>Training Certificates</td>
+                        <td>Manufacturers</td>
+                        <td>5-10 days</td>
+                        <td>2,000-5,000 SAR</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="nav-buttons">
+                <button class="nav-button" onclick="showPage('section2')">Previous: Legal Framework</button>
+                <button class="nav-button" onclick="showPage('section4')">Next: Regulatory Compliance</button>
+            </div>
+        </div>
+
+        <div id="section4" class="page">
+            <h1>Regulatory Compliance</h1>
+            
+            <p>Regulatory compliance is the cornerstone of ensuring the legal and safe operation of the car protection and nano ceramic center. This compliance requires a deep understanding of local laws, regulations, and industry standards, and the implementation of strict procedures to ensure ongoing adherence to all regulatory requirements.</p>
+
+            <h2>Permit and License Requirements</h2>
+            
+            <h3>Continuous Operational Licenses</h3>
+            <p>The continuous operation of the center requires maintaining the validity of all required licenses and permits. This includes the periodic renewal of the Commercial Registration, Municipal License, and Safety Certificate, and complying with any updates or amendments to regulatory requirements.</p>
+
+            <p>The renewal process requires a periodic review of compliance with the original conditions and may include field inspections from competent authorities to ensure requirements are still being met. A pre-reminder system for renewal dates should be established to avoid license interruptions, which could lead to work stoppages or fines.</p>
+
+            <h3>Environmental and Protection Regulations</h3>
+            <p>The center is subject to strict environmental regulations due to the use of chemical materials in cleaning and protection processes. These requirements include obtaining permits to handle hazardous materials, implementing safe storage procedures, and ensuring the proper disposal of chemical waste.</p>
+
+            <div class="card">
+                <h4>Waste Management Requirements:</h4>
+                <ul>
+                    <li>Separate chemical waste from regular waste.</li>
+                    <li>Contract with certified specialized companies for hazardous waste disposal.</li>
+                    <li>Document all disposal processes for review by environmental authorities.</li>
+                    <li>Develop a comprehensive waste management plan.</li>
+                </ul>
+            </div>
+
+            <h2>Industry and Quality Standards</h2>
+            
+            <h3>International Standards for Protection and Application</h3>
+            <p>Applying protection films and nano-ceramic coatings requires adherence to strict international quality and performance standards. These standards include using genuine, manufacturer-approved materials, applying certified installation techniques, and ensuring the final quality of the work.</p>
+
+            <h3>Accreditation and Training Certificates</h3>
+            <p>Maintaining high-quality standards requires continuous training for technicians and updating their certifications. Required training programs include specialized courses in applying protection films, nano-ceramic techniques, advanced cleaning methods, and safety procedures.</p>
+
+            <h2>Compliance Monitoring and Continuous Assessment</h2>
+            
+            <h3>Internal Monitoring Systems</h3>
+            <p>Ensuring continuous compliance requires the development of effective internal monitoring systems. These systems include periodic reviews of operations and procedures, assessing the level of compliance with regulatory requirements, and identifying any deviations or potential risks.</p>
+
+            <div class="highlight">
+                <h4>Compliance Officer Responsibilities:</h4>
+                <ul>
+                    <li>Monitor the implementation of all regulatory requirements.</li>
+                    <li>Prepare periodic reports.</li>
+                    <li>Coordinate with external parties when needed.</li>
+                    <li>Establish clear procedures for handling violations.</li>
+                </ul>
+            </div>
+
+            <h3>Reporting and Documentation</h3>
+            <p>Regulatory compliance requires maintaining detailed records and submitting periodic reports to the competent authorities. These reports include data on chemical use, quantities of waste generated, safety measures implemented, and work accidents, if any.</p>
+
+            <div class="nav-buttons">
+                <button class="nav-button" onclick="showPage('section3')">Previous: Licenses and Permits</button>
+                <button class="nav-button" onclick="showPage('section5')">Next: Contractual Considerations</button>
+            </div>
+        </div>
+
+        <div id="section5" class="page">
+            <h1>Contractual Considerations</h1>
+            
+            <p>Contractual considerations are a vital aspect of managing the car protection and nano ceramic center, as they define the legal relationships with all involved parties and ensure the protection of the project's rights and interests. These considerations require a careful study of all types of required contracts and agreements and ensuring their compliance with local laws and industry standards.</p>
+
+            <h2>Contracts for Supply of Raw Materials</h2>
+            
+            <h3>Contracts for Supply of Paint Protection Film (PPF)</h3>
+            <p>Contracts for the supply of protection films are among the most important commercial contracts for the project, as the quality of these materials directly affects the quality of the service provided and customer satisfaction.</p>
+
+            <div class="card">
+                <h4>Essential Clauses Required:</h4>
+                <ul>
+                    <li><strong>Technical Specifications:</strong> Thickness, transparency level, UV resistance, warranty period.</li>
+                    <li><strong>Supply Conditions:</strong> Supply quantities, delivery schedules, storage and transport conditions.</li>
+                    <li><strong>Warranties and Quality:</strong> Comprehensive warranties on material quality, replacement procedures.</li>
+                    <li><strong>Accepted Brands:</strong> XPEL, 3M, LLumar.</li>
+                </ul>
+            </div>
+
+            <h3>Contracts for Supply of Nano Ceramic Materials</h3>
+            <p>Nano ceramic materials require special care in contracting due to their advanced technical nature and sensitivity to storage and application.</p>
+
+            <h2>Employment and Staff Contracts</h2>
+            
+            <h3>Contracts for Saudi Employees</h3>
+            <p>Contracts for Saudi employees are subject to the Saudi Labor Law and must include all legally required clauses.</p>
+
+            <div class="highlight">
+                <h4>Essential Clauses Required:</h4>
+                <ul>
+                    <li>Basic Information: Employee's name and profession, contract duration, probation period.</li>
+                    <li>Basic Monthly Salary and payment method.</li>
+                    <li>Daily and weekly working hours.</li>
+                    <li>Rights and Duties: Nature of work, leave, medical insurance.</li>
+                    <li>Protection Clauses: Confidential information protection, non-competition, occupational safety.</li>
+                </ul>
+            </div>
+
+            <h3>Contracts for Expatriate Employees</h3>
+            <p>Contracts for expatriate employees require additional clauses related to the nature of residence and work in the Kingdom, such as residency conditions, visa renewals, housing, medical insurance, and annual travel tickets.</p>
+
+            <h2>Support Service Contracts</h2>
+            
+            <h3>Maintenance and Technical Support Contracts</h3>
+            <p>The specialized equipment used in the center requires comprehensive maintenance contracts to ensure continuous and effective operation.</p>
+
+            <h3>Comprehensive Insurance Contracts</h3>
+            <p>The nature of work at the car protection center requires comprehensive insurance coverage to protect against various risks, including public liability insurance, property insurance, and workers' insurance.</p>
+
+            <h2>Contractual Risk Management</h2>
+            
+            <h3>Legal Risk Analysis</h3>
+            <p>Managing contractual risks requires a comprehensive analysis of potential risks in each type of contract, such as supply risks, labor risks, and service risks.</p>
+
+            <h3>Legal Protection Strategies</h3>
+            <p>Comprehensive protection clauses must be included in all contracts, such as force majeure clauses, liability determination, dispute resolution procedures, and early termination conditions. It also requires a comprehensive legal review of all contracts by specialized lawyers.</p>
+
+            <div class="nav-buttons">
+                <button class="nav-button" onclick="showPage('section4')">Previous: Regulatory Compliance</button>
+                <button class="nav-button" onclick="showPage('section6')">Next: Intellectual Property Rights</button>
+            </div>
+        </div>
+
+        <div id="section6" class="page">
+            <h1>Intellectual Property Rights</h1>
+            
+            <p>Intellectual property rights are a vital aspect of the car protection and nano ceramic center's operations, as the project deals with advanced technologies and famous global brands. This requires a deep understanding of intellectual property laws in Saudi Arabia and strict adherence to protecting the rights of others and the project's own rights.</p>
+
+            <h2>Trademark Protection</h2>
+            
+            <h3>Trademarks for Materials and Products</h3>
+            <p>The center uses products from famous global brands such as XPEL, 3M, GYEON, and LLumar, all of which are protected by international and local intellectual property laws. Using these products requires obtaining official licenses from the manufacturers or their authorized distributors in the Kingdom.</p>
+
+            <div class="card">
+                <h4>Requirements for Legal Use:</h4>
+                <ul>
+                    <li>Ensure all materials used are genuine and imported through official channels.</li>
+                    <li>Retain all documents proving the legitimacy of product acquisition.</li>
+                    <li>Purchase invoices, certificates of authenticity, and distribution licenses.</li>
+                    <li>Adhere to the marketing guidelines issued by each manufacturer.</li>
+                </ul>
+            </div>
+
+            <h3>Use of Trademarks in Marketing</h3>
+            <p>The center has the right to use the trademarks of the products it uses in marketing and advertising, but within specific limits and under certain conditions. It must adhere to the marketing guidelines issued by each manufacturer, which specify how to use the trademark, logos, and corporate colors.</p>
+
+            <h2>Protection of Technologies and Processes</h2>
+            
+            <h3>Specialized Application Technologies</h3>
+            <p>The processes of applying protection films and nano-ceramic coatings involve specialized techniques that may be protected by patents or trade secrets. It must be ensured that all technologies used are legally licensed and that technicians are trained and certified by the manufacturers.</p>
+
+            <div class="highlight">
+                <h4>Required Protection Measures:</h4>
+                <ul>
+                    <li>Sign Non-Disclosure Agreements (NDAs) with all employees.</li>
+                    <li>Establish strict procedures to protect information from leakage.</li>
+                    <li>Train employees on the legal use of technologies.</li>
+                    <li>Avoid any copyright infringements.</li>
+                </ul>
+            </div>
+
+            <h3>Design and Cutting Software</h3>
+            <p>Some types of protection films use specialized design software, such as XPEL's DAP program, to design custom cuts for each car model. These programs are protected by copyright and their use requires official licenses.</p>
+
+            <h2>Developing the Center's Brand Identity</h2>
+            
+            <h3>Registering the Center's Trademark</h3>
+            <p>It is highly recommended to register a distinctive trademark for the center with the Saudi Authority for Intellectual Property (SAIP). This registration provides legal protection for the trade name and logo and prevents others from using them without permission.</p>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Service</th>
+                        <th>Cost</th>
+                        <th>Duration</th>
+                        <th>Protection Period</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Trademark Registration</td>
+                        <td>1,000 SAR</td>
+                        <td>12-18 months</td>
+                        <td>10 years, renewable</td>
+                    </tr>
+                    <tr>
+                        <td>Trademark Renewal</td>
+                        <td>500 SAR</td>
+                        <td>3-6 months</td>
+                        <td>10 additional years</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>Protecting Marketing Content</h3>
+            <p>All marketing and advertising materials produced by the center, including photos, videos, texts, and designs, must be protected. This requires documenting the production date and retaining original copies of all materials.</p>
+
+            <h2>Managing IP-Related Risks</h2>
+            
+            <h3>Risks of Infringing Others' Rights</h3>
+            <p>Key risks include using counterfeit or non-genuine products, infringing trademarks in marketing, or using patented technologies without a license. Such violations can lead to costly lawsuits and reputational damage.</p>
+
+            <h3>Protecting the Center's Trade Secrets</h3>
+            <p>The center's sensitive information, such as customer lists, work methods, and internally developed techniques, must be protected. This requires establishing clear information protection policies and signing non-disclosure agreements with all employees and contractors.</p>
+
+            <div class="nav-buttons">
+                <button class="nav-button" onclick="showPage('section5')">Previous: Contractual Considerations</button>
+                <button class="nav-button" onclick="showPage('section7')">Next: Legal Risk Management</button>
+            </div>
+        </div>
+
+        <div id="section7" class="page">
+            <h1>Legal Risk Management</h1>
+            
+            <p>Managing a car protection and nano ceramic center requires identifying, assessing, and managing a wide range of legal risks that could affect operations, profitability, and reputation. These risks include regulatory, contractual, operational, and environmental challenges, and they require comprehensive strategies for prevention, mitigation, and response.</p>
+
+            <h2>Analysis of Key Risks</h2>
+            
+            <h3>Regulatory Compliance Risks</h3>
+            <p>The risk of non-compliance with local laws and regulations is one of the most significant challenges facing the project. These risks include failing to renew licenses on time, not complying with occupational safety and health requirements, or violating environmental laws.</p>
+
+            <div class="card">
+                <h4>Potential Consequences:</h4>
+                <ul>
+                    <li>Heavy financial penalties.</li>
+                    <li>Temporary or permanent closure of the facility.</li>
+                    <li>Revocation of licenses.</li>
+                    <li>Lawsuits from government agencies.</li>
+                    <li>Negative impact on reputation and customer trust.</li>
+                </ul>
+            </div>
+
+            <div class="highlight">
+                <h4>Mitigation Strategies:</h4>
+                <ul>
+                    <li>Establish an early reminder system for license renewal dates.</li>
+                    <li>Appoint a dedicated compliance officer.</li>
+                    <li>Conduct periodic regulatory compliance reviews.</li>
+                    <li>Engage specialized legal consultants.</li>
+                    <li>Develop documented procedures for all operations.</li>
+                </ul>
+            </div>
+
+            <h3>Civil Liability Risks</h3>
+            <p>The nature of the work at the car protection center involves high risks of civil liability, as the center deals with expensive cars and applies chemicals that could cause damage if used incorrectly.</p>
+
+            <h3>Labor and Human Resources Risks</h3>
+            <p>Labor risks include labor disputes, work injuries, violations of labor law, high employee turnover, and a shortage of specialized skills.</p>
+
+            <h2>Operational Risks</h2>
+            
+            <h3>Service Quality Risks</h3>
+            <p>The center's reputation and success depend heavily on the quality of services provided. Quality risks include using poor-quality materials, application errors, failure to adhere to professional standards, or lack of training for technicians.</p>
+
+            <h3>Supply Chain Risks</h3>
+            <p>Operations are highly dependent on the availability of specialized materials and equipment, which may face supply challenges due to external factors like shipping delays, customs issues, or supplier stock shortages.</p>
+
+            <h2>Financial and Legal Risks</h2>
+            
+            <h3>Litigation Risks</h3>
+            <p>The project faces potential risks of lawsuits from various sources, including dissatisfied customers, suppliers, employees, and government agencies. These lawsuits can be very costly, even if they are legally baseless.</p>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Risk Type</th>
+                        <th>Risk Level</th>
+                        <th>Potential Impact</th>
+                        <th>Mitigation Strategy</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Regulatory Compliance</td>
+                        <td>High</td>
+                        <td>Fines and closure</td>
+                        <td>Continuous monitoring</td>
+                    </tr>
+                    <tr>
+                        <td>Civil Liability</td>
+                        <td>High</td>
+                        <td>Large compensations</td>
+                        <td>Comprehensive insurance</td>
+                    </tr>
+                    <tr>
+                        <td>Service Quality</td>
+                        <td>Medium</td>
+                        <td>Loss of customers</td>
+                        <td>Quality control</td>
+                    </tr>
+                    <tr>
+                        <td>Supply Chain</td>
+                        <td>Medium</td>
+                        <td>Operational halt</td>
+                        <td>Multiple suppliers</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>Tax and Zakat Risks</h3>
+            <p>Tax risks include non-compliance with the requirements of the Zakat, Tax, and Customs Authority, errors in tax returns, or failure to pay dues on time.</p>
+
+            <h2>Comprehensive Risk Management Plan</h2>
+            
+            <h3>Periodic Risk Assessment</h3>
+            <p>A comprehensive risk assessment should be conducted periodically (at least every 6 months) to identify new risks and evaluate the effectiveness of current strategies.</p>
+
+            <h3>Early Warning System</h3>
+            <p>An early warning system should be developed to identify potential risks before they become actual problems, including key risk indicators and periodic reports on compliance status.</p>
+
+            <h3>Crisis Response Plan</h3>
+            <p>A comprehensive crisis response plan should be in place, outlining the required actions in the event of a major risk, including a crisis management team, communication procedures, and steps for damage control and recovery.</p>
+
+            <div class="nav-buttons">
+                <button class="nav-button" onclick="showPage('section6')">Previous: Intellectual Property Rights</button>
+                <button class="nav-button" onclick="showPage('section8')">Next: Administrative and Organizational Structure</button>
+            </div>
+        </div>
+		
+		<div id="section8" class="page">
+            <h1>Administrative and Organizational Structure</h1>
+            
+            <p>The successful operation of a car protection and nano ceramic center requires developing an effective administrative and organizational structure that ensures operational efficiency, compliance with legal requirements, and achievement of business goals. This structure should be flexible enough to adapt to the project's growth and changing market demands.</p>
+
+            <h2>Proposed Organizational Structure</h2>
+            
+            <h3>Top Management</h3>
+            
+            <div class="card">
+                <h4>General Manager / Owner</h4>
+                <p><strong>Responsibilities:</strong></p>
+                <ul>
+                    <li>Overall responsibility for managing the project and making strategic decisions.</li>
+                    <li>Supervising all operations.</li>
+                    <li>Managing relationships with key clients.</li>
+                    <li>Strategic planning.</li>
+                    <li>Ensuring compliance with laws and regulations.</li>
+                </ul>
+                <p><strong>Qualifying Requirements:</strong></p>
+                <ul>
+                    <li>At least 5 years of experience in business management or the automotive sector.</li>
+                    <li>Good knowledge of local laws and regulations.</li>
+                    <li>Strong leadership and management skills.</li>
+                    <li>Fluency in English for dealing with international suppliers.</li>
+                </ul>
+            </div>
+
+            <h3>Operational Management</h3>
+            
+            <div class="highlight">
+                <h4>Operations Manager</h4>
+                <p><strong>Responsibilities:</strong></p>
+                <ul>
+                    <li>Direct supervision of daily operations.</li>
+                    <li>Ensuring the quality of services provided.</li>
+                    <li>Managing technicians and monitoring quality.</li>
+                    <li>Inventory management and coordination with suppliers.</li>
+                </ul>
+                <p><strong>Requirements:</strong> 3 years of experience in car services, certified in PPF and nano ceramic application.</p>
+            </div>
+
+            <div class="card">
+                <h4>Safety and Compliance Officer</h4>
+                <p><strong>Responsibilities:</strong></p>
+                <ul>
+                    <li>Ensure compliance with all occupational safety and health requirements.</li>
+                    <li>Monitor the implementation of safety procedures.</li>
+                    <li>Prepare required reports for government agencies.</li>
+                    <li>Train employees on safety.</li>
+                </ul>
+            </div>
+
+            <h3>Technical Team</h3>
+            
+            <table>
+                <thead>
+                    <tr>
+                        <th>Position</th>
+                        <th>Number Required</th>
+                        <th>Basic Qualifications</th>
+                        <th>Expected Salary</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Lead Technician</td>
+                        <td>1</td>
+                        <td>5 years experience + certified</td>
+                        <td>6,000-8,000 SAR</td>
+                    </tr>
+                    <tr>
+                        <td>Application Technicians</td>
+                        <td>2-3</td>
+                        <td>2 years experience + basic certifications</td>
+                        <td>4,000-6,000 SAR</td>
+                    </tr>
+                    <tr>
+                        <td>Customer Service Rep</td>
+                        <td>1</td>
+                        <td>Communication skills + CS experience</td>
+                        <td>3,500-5,000 SAR</td>
+                    </tr>
+                    <tr>
+                        <td>Accountant</td>
+                        <td>1</td>
+                        <td>Accounting degree + 2-3 years experience</td>
+                        <td>4,000-6,000 SAR</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h2>Policies and Procedures</h2>
+            
+            <h3>Recruitment and Selection Policy</h3>
+            <p>The recruitment policy aims to attract and select the best available talent while adhering to Saudization requirements and local laws.</p>
+
+            <div class="card">
+                <h4>Selection Criteria:</h4>
+                <ul>
+                    <li>Required educational and professional qualifications.</li>
+                    <li>Practical experience in the field.</li>
+                    <li>Technical and personal skills.</li>
+                    <li>Ability to learn and develop.</li>
+                    <li>Commitment to the organization's values.</li>
+                </ul>
+            </div>
+
+            <h3>Training and Development Policy</h3>
+            <p>This policy aims to ensure the continuous development of employee skills and keep pace with industry developments.</p>
+
+            <div class="highlight">
+                <h4>Core Training Programs:</h4>
+                <ul>
+                    <li>Occupational safety and health training.</li>
+                    <li>Technical training on products and techniques.</li>
+                    <li>Customer service training.</li>
+                    <li>Compliance and legal training.</li>
+                </ul>
+            </div>
+
+            <h3>Performance and Appraisal Policy</h3>
+            <p>Aims to ensure high performance and motivate employees to excel through clear evaluation criteria and an effective reward and incentive system.</p>
+
+            <h2>Governance and Internal Control</h2>
+            
+            <h3>Internal Control System</h3>
+            <p>Aims to ensure compliance with policies and procedures and protect the organization's assets through financial and operational audits.</p>
+
+            <h3>Operational Risk Management</h3>
+            <p>Includes identifying risks such as quality and safety risks, human resources risks, supply and inventory risks, and technology and equipment risks, with appropriate mitigation strategies.</p>
+
+            <div class="nav-buttons">
+                <button class="nav-button" onclick="showPage('section7')">Previous: Legal Risk Management</button>
+                <button class="nav-button" onclick="showPage('section9')">Next: Tax and Zakat Obligations</button>
+            </div>
+        </div>
+
+        <div id="section9" class="page">
+            <h1>Tax and Zakat Obligations</h1>
+            
+            <p>Tax and Zakat obligations are an important aspect of managing the car protection and nano ceramic center, requiring compliance with all financial and tax requirements in the Kingdom of Saudi Arabia. This demands a deep understanding of tax and Zakat systems and the implementation of precise procedures to ensure full compliance.</p>
+
+            <h2>Value Added Tax (VAT) System</h2>
+            
+            <h3>VAT Registration</h3>
+            <p>Saudi law requires establishments with annual revenues exceeding 375,000 SAR to register for VAT. For the car protection center, it is expected to exceed this threshold within the first year of operation, making registration mandatory.</p>
+
+            <div class="card">
+                <h4>Registration Procedures:</h4>
+                <ol>
+                    <li>Submit the registration application via the FATOORA e-invoicing platform.</li>
+                    <li>Provide required documents (Commercial Registration, Municipal License, financial statements).</li>
+                    <li>Wait for approval and receive the tax number.</li>
+                    <li>Apply VAT to all services.</li>
+                </ol>
+                <p><strong>Expected Duration:</strong> 15-30 business days</p>
+                <p><strong>Fees:</strong> Free</p>
+            </div>
+
+            <h3>Applying VAT to Services</h3>
+            <p>All car protection services are subject to a 15% VAT:</p>
+
+            <div class="highlight">
+                <h4>Services Subject to Tax:</h4>
+                <ul>
+                    <li>Paint Protection Film (PPF) Application</li>
+                    <li>Nano Ceramic Application</li>
+                    <li>Window Tinting</li>
+                    <li>Polishing and Cleaning Services</li>
+                    <li>Sale of Products and Accessories</li>
+                </ul>
+            </div>
+
+            <h2>Zakat System</h2>
+            
+            <h3>Zakat Registration</h3>
+            <p>Saudi establishments are subject to the Zakat system according to Islamic Sharia provisions and local laws. Registration in the Zakat system is required within 60 days of starting the business.</p>
+
+            <h3>Calculating the Zakat Base</h3>
+            <p>The Zakat base is calculated on the net Zakat-able assets of the establishment:</p>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Item</th>
+                        <th>Details</th>
+                        <th>Treatment</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Cash and Deposits</td>
+                        <td>Cash on hand and bank accounts</td>
+                        <td>Added to base</td>
+                    </tr>
+                    <tr>
+                        <td>Inventory</td>
+                        <td>Stored materials and products</td>
+                        <td>Added to base</td>
+                    </tr>
+                    <tr>
+                        <td>Accounts Receivable</td>
+                        <td>Amounts due from customers</td>
+                        <td>Added to base</td>
+                    </tr>
+                    <tr>
+                        <td>Accounts Payable</td>
+                        <td>Amounts due to suppliers</td>
+                        <td>Deducted from base</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <p><strong>Zakat Rate:</strong> 2.5% of net Zakat-able assets</p>
+
+            <h2>Expected Tax Costs</h2>
+            
+            <div class="card">
+                <h3>Estimated Annual Costs (based on revenues of 800,000 SAR):</h3>
+                <ul>
+                    <li><strong>Value Added Tax (VAT):</strong> 90,000 SAR annually</li>
+                    <li><strong>Zakat:</strong> 5,000 SAR annually</li>
+                    <li><strong>Expat Labor Fees:</strong> 14,400 SAR annually</li>
+                    <li><strong>Total Tax Costs:</strong> 109,400 SAR annually</li>
+                </ul>
+            </div>
+
+            <div class="nav-buttons">
+                <button class="nav-button" onclick="showPage('section8')">Previous: Admin. Structure</button>
+                <button class="nav-button" onclick="showPage('section10')">Next: Labor Licenses</button>
+            </div>
+        </div>
+
+        <div id="section10" class="page">
+            <h1>Labor Licenses and Labor Law</h1>
+            
+            <p>Compliance with the Saudi Labor Law and obtaining the appropriate labor licenses are among the most important legal requirements for operating the car protection and nano ceramic center. This requires a comprehensive understanding of labor laws, Saudization requirements, and recruitment procedures for local and expatriate labor.</p>
+
+            <h2>Saudization Requirements</h2>
+            
+            <h3>Required Saudization Ratios</h3>
+            <p>According to the Nitaqat program, establishments in the car services sector must achieve specific Saudization ratios to obtain the appropriate classification. For small establishments (fewer than 10 employees):</p>
+
+            <div class="card">
+                <h4>Green Category (Required):</h4>
+                <ul>
+                    <li>Saudization Ratio: At least 20%</li>
+                    <li>For a facility with 5 employees: at least one Saudi employee</li>
+                    <li>For a facility with 8 employees: at least two Saudi employees</li>
+                </ul>
+            </div>
+
+            <div class="highlight">
+                <h4>Benefits of the Green Category:</h4>
+                <ul>
+                    <li>Ability to recruit new expatriate labor.</li>
+                    <li>Renewal of work visas for current labor.</li>
+                    <li>Access to services from the Ministry of Human Resources.</li>
+                    <li>Discounts on expatriate labor fees.</li>
+                </ul>
+            </div>
+
+            <h2>Expatriate Labor Licenses</h2>
+            
+            <h3>Recruitment Procedures</h3>
+            
+            <div class="card">
+                <h4>Basic Requirements:</h4>
+                <ul>
+                    <li>Achieve Green category in Nitaqat.</li>
+                    <li>Have sufficient balance on the Qiwa platform.</li>
+                    <li>Meet Saudization requirements.</li>
+                    <li>Pay expatriate labor fees.</li>
+                </ul>
+            </div>
+
+            <h4>Recruitment Steps:</h4>
+            <ol>
+                <li>Submit a recruitment request via the Qiwa platform.</li>
+                <li>Specify the required profession and nationality.</li>
+                <li>Pay the required fees (2,000 SAR per worker).</li>
+                <li>Wait for ministry approval.</li>
+                <li>Issue the work visa.</li>
+                <li>Receive the worker and complete procedures.</li>
+            </ol>
+
+            <h2>Employment Contracts and Rights</h2>
+            
+            <h3>Saudi Employee Contracts</h3>
+            
+            <table>
+                <thead>
+                    <tr>
+                        <th>Clause</th>
+                        <th>Required Details</th>
+                        <th>Minimum/Standard</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Basic Salary</td>
+                        <td>Minimum wage</td>
+                        <td>3,000 SAR per month</td>
+                    </tr>
+                    <tr>
+                        <td>Working Hours</td>
+                        <td>Daily and weekly maximum</td>
+                        <td>8 hours/day, 48 hours/week</td>
+                    </tr>
+                    <tr>
+                        <td>Annual Leave</td>
+                        <td>Minimum paid leave</td>
+                        <td>21 days annually</td>
+                    </tr>
+                    <tr>
+                        <td>Social Insurance</td>
+                        <td>Employer's contribution rate</td>
+                        <td>12% of basic salary</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>Expatriate Employee Contracts</h3>
+            
+            <div class="highlight">
+                <h4>Additional Required Clauses:</h4>
+                <ul>
+                    <li>Contract duration (usually two years, renewable).</li>
+                    <li>Residency and housing conditions.</li>
+                    <li>Medical insurance and treatment.</li>
+                    <li>Annual travel tickets.</li>
+                    <li>Residency renewal procedures.</li>
+                </ul>
+            </div>
+
+            <h2>Occupational Safety and Health</h2>
+            
+            <h3>Mandatory Training</h3>
+            <div class="card">
+                <ul>
+                    <li>Occupational Safety and Health program (8 hours).</li>
+                    <li>Training on using Personal Protective Equipment (PPE).</li>
+                    <li>Emergency and evacuation procedures.</li>
+                    <li>Safe handling of chemical materials.</li>
+                </ul>
+            </div>
+
+            <h3>Personal Protective Equipment (PPE)</h3>
+            <ul>
+                <li>Chemical-resistant gloves.</li>
+                <li>Safety goggles.</li>
+                <li>Respirator masks when necessary.</li>
+                <li>Appropriate work clothing.</li>
+                <li>Safety shoes.</li>
+            </ul>
+
+            <div class="nav-buttons">
+                <button class="nav-button" onclick="showPage('section9')">Previous: Tax Obligations</button>
+                <button class="nav-button" onclick="showPage('section11')">Next: Required Insurance</button>
+            </div>
+        </div>
+
+        <div id="section11" class="page">
+            <h1>Required Insurance</h1>
+            
+            <p>Insurance is a vital aspect of protecting the car protection and nano ceramic center from the various risks that operations may face. The nature of the work in this field requires comprehensive insurance coverage that protects against operational, financial, and legal risks.</p>
+
+            <h2>Public Liability Insurance</h2>
+            
+            <h3>General Liability Insurance</h3>
+            <p>This insurance is mandatory and covers damages that may be caused to third parties as a result of the center's activities:</p>
+
+            <div class="card">
+                <h4>Required Coverage:</h4>
+                <ul>
+                    <li>Minimum limit: 1,000,000 SAR</li>
+                    <li>Preferred limit: 2,000,000 SAR</li>
+                    <li>Includes bodily injury and property damage.</li>
+                    <li>Covers damages to customers and visitors.</li>
+                    <li>Includes product and service damages.</li>
+                </ul>
+                <p><strong>Expected Premiums:</strong> 8,000-15,000 SAR annually</p>
+            </div>
+
+            <h3>Professional Liability Insurance</h3>
+            <p>Covers errors and negligence in providing professional services:</p>
+
+            <div class="highlight">
+                <h4>Coverage Includes:</h4>
+                <ul>
+                    <li>Errors in applying protection films.</li>
+                    <li>Damage resulting from poor application.</li>
+                    <li>Customer claims for compensation.</li>
+                    <li>Legal defense costs.</li>
+                    <li>Re-doing defective work.</li>
+                </ul>
+            </div>
+
+            <h2>Property Insurance</h2>
+            
+            <h3>Equipment and Tools Insurance</h3>
+            <p>Covers specialized equipment and tools used in the work:</p>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Equipment Type</th>
+                        <th>Estimated Value</th>
+                        <th>Annual Premium</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Heating and application devices</td>
+                        <td>80,000 SAR</td>
+                        <td>1,200 SAR</td>
+                    </tr>
+                    <tr>
+                        <td>Cutting and shaping tools</td>
+                        <td>40,000 SAR</td>
+                        <td>600 SAR</td>
+                    </tr>
+                    <tr>
+                        <td>Cleaning equipment</td>
+                        <td>30,000 SAR</td>
+                        <td>450 SAR</td>
+                    </tr>
+                    <tr>
+                        <td>Furniture and fittings</td>
+                        <td>50,000 SAR</td>
+                        <td>750 SAR</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>Inventory Insurance</h3>
+            <div class="card">
+                <h4>Materials Covered:</h4>
+                <ul>
+                    <li>Paint Protection Films (PPF)</li>
+                    <li>Nano ceramic materials</li>
+                    <li>Tinting materials</li>
+                    <li>Cleaning and polishing products</li>
+                    <li>Accessories and small tools</li>
+                </ul>
+                <p><strong>Insurance Value:</strong> 100,000 SAR</p>
+                <p><strong>Annual Premium:</strong> 1,500-2,000 SAR</p>
+            </div>
+
+            <h2>Worker Insurance</h2>
+            
+            <h3>Work Injury Insurance</h3>
+            <p>Mandatory insurance covering work injuries and occupational diseases:</p>
+
+            <div class="highlight">
+                <h4>Coverage Includes:</h4>
+                <ul>
+                    <li>Full medical treatment.</li>
+                    <li>Compensation for temporary or permanent disability.</li>
+                    <li>Death compensation.</li>
+                    <li>Vocational rehabilitation.</li>
+                    <li>Additional expenses for treatment.</li>
+                </ul>
+                <p><strong>Cost:</strong> 0.75% of total salaries annually</p>
+            </div>
+
+            <h3>Medical Insurance for Workers</h3>
+            <p>Mandatory insurance for all workers (Saudis and expatriates):</p>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Coverage Type</th>
+                        <th>Minimum Limit</th>
+                        <th>Annual Cost</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Inpatient Treatment</td>
+                        <td>100,000 SAR</td>
+                        <td>1,200 SAR/worker</td>
+                    </tr>
+                    <tr>
+                        <td>Outpatient Treatment</td>
+                        <td>50,000 SAR</td>
+                        <td>800 SAR/worker</td>
+                    </tr>
+                    <tr>
+                        <td>Maternity</td>
+                        <td>15,000 SAR</td>
+                        <td>Included</td>
+                    </tr>
+                    <tr>
+                        <td>Dental</td>
+                        <td>5,000 SAR</td>
+                        <td>Included</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h2>Summary of Insurance Costs</h2>
+            
+            <div class="card">
+                <h3>Estimated Annual Costs (for a team of 6 employees):</h3>
+                <ul>
+                    <li><strong>Public Liability Insurance:</strong> 12,000 SAR</li>
+                    <li><strong>Property and Equipment Insurance:</strong> 5,000 SAR</li>
+                    <li><strong>Work Injury Insurance:</strong> 3,000 SAR</li>
+                    <li><strong>Medical Insurance for Workers:</strong> 7,200 SAR</li>
+                    <li><strong>Total Insurance Costs:</strong> 27,200 SAR annually</li>
+                </ul>
+            </div>
+
+            <div class="highlight">
+                <h4>Tips for Saving Costs:</h4>
+                <ul>
+                    <li>Compare offers from different insurance companies.</li>
+                    <li>Take advantage of no-claim discounts.</li>
+                    <li>Implement strict safety procedures.</li>
+                    <li>Negotiate comprehensive insurance packages.</li>
+                </ul>
+            </div>
+
+            <div class="nav-buttons">
+                <button class="nav-button" onclick="showPage('section10')">Previous: Labor Licenses</button>
+                <button class="nav-button" onclick="showPage('section12')">Next: Recommendations & Conclusion</button>
+            </div>
+        </div>
+		
+		<div id="section12" class="page">
+            <h1>Recommendations and Conclusion</h1>
+            
+            <p>Based on the comprehensive analysis of the legal and regulatory aspects of the car protection and nano ceramic center project, this study provides a set of strategic and operational recommendations.</p>
+
+            <h2>Strategic Recommendations</h2>
+            
+            <div class="card">
+                <h3>Recommendation 1: Phased Implementation Plan</h3>
+                <p>It is recommended to implement the project in gradual phases to ensure progressive compliance and reduce risks:</p>
+                <ul>
+                    <li><strong>Phase 1 (Month 1-2):</strong> Obtain basic licenses and prepare the site.</li>
+                    <li><strong>Phase 2 (Month 2-3):</strong> Obtain specialized licenses and conduct training.</li>
+                    <li><strong>Phase 3 (Month 3-4):</strong> Start pilot operations and expand gradually.</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h3>Recommendation 2: Invest in Compliance and Quality</h3>
+                <ul>
+                    <li>Allocate 5-10% of capital for training and certifications.</li>
+                    <li>Develop a comprehensive quality management system.</li>
+                    <li>Implement an effective risk management system.</li>
+                    <li>Use information technology to monitor compliance.</li>
+                </ul>
+            </div>
+
+            <h2>Final Conclusion</h2>
+            
+            <div class="highlight">
+                <h3>Key Positive Points:</h3>
+                <ul>
+                    <li><strong>Supportive Regulatory Environment:</strong> Advanced electronic platforms and simplified procedures.</li>
+                    <li><strong>Growing Demand:</strong> Growth in the Saudi market for car protection services.</li>
+                    <li><strong>Government Support:</strong> Various support programs for small and medium-sized enterprises.</li>
+                </ul>
+            </div>
+
+            <div class="highlight">
+                <h3>Key Challenges:</h3>
+                <ul>
+                    <li><strong>Complexity of Requirements:</strong> Compliance with multiple laws from different authorities.</li>
+                    <li><strong>Specialized Expertise:</strong> Need for high technical expertise and certified credentials.</li>
+                    <li><strong>Operational Risks:</strong> High risks of civil liability.</li>
+                </ul>
+            </div>
+
+            <p><strong>Future Outlook:</strong> With adherence to the recommendations provided and implementation of best practices, the project is expected to achieve tangible success and sustainable growth, contributing to the development of the automotive services sector in the Kingdom.</p>
+
+            <div class="nav-buttons">
+                <button class="nav-button" onclick="showPage('section11')">Previous: Required Insurance</button>
+                <button class="nav-button" onclick="showPage('section13')">Next: References & Sources</button>
+            </div>
+        </div>
+
+        <div id="section13" class="page">
+            <h1>References and Sources</h1>
+            
+            <h2>Primary Legal References</h2>
+            <ol>
+                <li>Saudi Companies Law, Royal Decree No. M/132, 1443H</li>
+                <li>Saudi Labor Law, Royal Decree No. M/51, 1426H</li>
+                <li>Ministry of Municipal and Rural Affairs and Housing, Draft Requirements for Car and Motorcycle Repair Workshops, 2020</li>
+                <li>Consumer Protection Law, Royal Decree No. M/7, 1429H</li>
+                <li>Ministry of Human Resources and Social Development, Occupational Safety and Health Regulations</li>
+                <li>Saudi Environment Authority, Environmental Regulations for Commercial Activities</li>
+                <li>Saudi Vision 2030, Financial Sector Development Program</li>
+                <li>Investment Law, Royal Decree No. M/24, 1421H</li>
+                <li>Digital Transformation Program, Ministry of Communications and Information Technology</li>
+                <li>Ministry of Commerce, Electronic Services Platform cr.sa</li>
+            </ol>
+
+            <h2>Government E-Platforms</h2>
+            <div class="card">
+                <ul>
+                    <li><strong>cr.sa Platform:</strong> Ministry of Commerce - for Commercial Registration</li>
+                    <li><strong>balady.gov.sa Platform:</strong> Ministry of Municipalities - for Municipal License</li>
+                    <li><strong>safety.gov.sa Platform:</strong> Civil Defense - for Safety Certificate</li>
+                    <li><strong>FATOORA Platform:</strong> Zakat, Tax and Customs Authority - for VAT</li>
+                    <li><strong>Qiwa Platform:</strong> Ministry of Human Resources - for Labor Licenses</li>
+                    <li><strong>Absher Business Platform:</strong> Ministry of Interior - for Government Services</li>
+                </ul>
+            </div>
+
+            <h2>Additional Sources</h2>
+            <ul>
+                <li>Bouh Marketing, "Feasibility Study Project Template," https://bouhmarketing.com</li>
+                <li>Bakkah for Education, "Legal Feasibility Study," https://bakkah.com</li>
+                <li>Saudi Chambers of Commerce, Business and Investment Guides</li>
+                <li>Saudi Industrial Development Fund, SME Support Programs</li>
+                <li>Saudi Authority for Intellectual Property, Trademark Protection Laws</li>
+                <li>Zakat, Tax and Customs Authority, Tax and Zakat Regulations</li>
+            </ul>
+
+            <div class="highlight">
+                <p><strong>Important Note:</strong> This study was prepared by Manus AI based on the latest laws and regulations available in the Kingdom of Saudi Arabia as of July 2025. It is advisable to consult with specialized legal advisors before making any executive decisions.</p>
+            </div>
+
+            <div class="nav-buttons">
+                <button class="nav-button" onclick="showPage('section12')">Previous: Recommendations & Conclusion</button>
+                <button class="nav-button" disabled>End of Study</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function showPage(pageId) {
+            // Hide all pages
+            const pages = document.querySelectorAll('.page');
+            pages.forEach(page => {
+                page.classList.remove('active');
+            });
+
+            // Show selected page
+            const selectedPage = document.getElementById(pageId);
+            if (selectedPage) {
+                selectedPage.classList.add('active');
+            }
+
+            // Update sidebar active state
+            const links = document.querySelectorAll('.sidebar a');
+            links.forEach(link => {
+                link.classList.remove('active');
+            });
+
+            // Find and activate the corresponding sidebar link
+            const activeLink = document.querySelector(`[onclick="showPage('${pageId}')"]`);
+            if (activeLink) {
+                activeLink.classList.add('active');
+            }
+
+            // Scroll to top of main content
+            document.querySelector('.main-content').scrollTop = 0;
+        }
+
+        // Initialize the page
+        document.addEventListener('DOMContentLoaded', function() {
+            showPage('intro');
+        });
+
+        // Add keyboard navigation (Adjusted for LTR logic)
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'ArrowLeft' || e.key === 'ArrowRight') {
+                const currentPage = document.querySelector('.page.active');
+                if (currentPage) {
+                    const pages = ['intro', 'section1', 'section2', 'section3', 'section4', 'section5', 'section6', 'section7', 'section8', 'section9', 'section10', 'section11', 'section12', 'section13'];
+                    const currentIndex = pages.indexOf(currentPage.id);
+                    
+                    if (e.key === 'ArrowLeft' && currentIndex > 0) { // Left arrow goes to previous page
+                        showPage(pages[currentIndex - 1]);
+                    } else if (e.key === 'ArrowRight' && currentIndex < pages.length - 1) { // Right arrow goes to next page
+                        showPage(pages[currentIndex + 1]);
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html>
